@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="registration-form">
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <p>Full Name:</p>
+        <input type="text" name="fullname" placeholder="Full Name">
+        <p>User Name</p>
+        <input type="text" name="username" placeholder="User name">
+        <p>Email</p>
+        <input type="text" name="email" placeholder="Email">
+        <p>Password</p>
+        <input type="text" name="password" placeholder="Password">
+        <div class="container">
+        <button type="submit"class= "btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup"> 
+         <a href="https://www.flaticon.com/free-icons/foursquare-check-in"></a>
+         <h2>Thank you!</h2>
+         <p>Successful!</p>
+         <button type="button"onclick="closePopup()">Ok</button>
+        </div>
+      </div>
+      <script>
+        let popup=document.getElementById("popup")
+        function openPopup(){
+          popup.classList.add("open-popup");
+        }function closePopup(){
+          popup.classList.remove("open-popup");
+        }
+      </script>
+    </form>
+   </div>
